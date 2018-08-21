@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jibie4"
+            android:tint="@color/rank4"
+            android:scaleType="fitCenter"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:layout_marginStart="75dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="高"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/male_rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jibie3"
+            android:tint="@color/rank3"
+            android:scaleType="fitCenter"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:layout_marginStart="75dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="中"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/male_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jibie2"
+            android:tint="@color/rank2"
+            android:scaleType="fitCenter"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:layout_marginStart="75dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="低"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/male_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jibie1"
+            android:tint="@color/rank1"
+            android:scaleType="fitCenter"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:layout_marginStart="75dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="无"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/male_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

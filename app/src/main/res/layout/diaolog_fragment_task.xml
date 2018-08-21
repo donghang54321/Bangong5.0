@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:layout_gravity="bottom"
+    android:background="@color/background_my_material_light">
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:hint="请输入任务标题"
+        android:textColorHint="@color/textHint"
+        android:textSize="17dp"/>
+
+    <android.support.percent.PercentRelativeLayout 
+        android:layout_below="@id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_task2">
+
+
+        <RelativeLayout
+            android:id="@+id/tab_rl_1"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:onClick="onTabClick1"
+            android:layout_alignParentStart="true">
+
+
+            <ImageView
+                android:id="@+id/main_tab_iv1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/riqi" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/tab_rl_2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:onClick="onTabClick2"
+            app:layout_marginStartPercent="22%">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/main_tab_iv2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/addren" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/tab_rl_3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:onClick="onTabClick3"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/main_tab_iv3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/jibie" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/tab_rl_4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:onClick="onTabClick4"
+            android:layout_alignParentEnd="true"
+            app:layout_marginEndPercent="22%">
+
+            <ImageView
+                android:id="@+id/main_tab_iv4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gengduo" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/tab_rl_5"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/main_tab_iv5"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightarrow" />
+
+
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

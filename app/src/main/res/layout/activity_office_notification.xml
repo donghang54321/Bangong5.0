@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack">
+
+    <LinearLayout
+        android:id="@+id/titlell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <ImageView
+                    android:id="@+id/title_right_iv"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:colorControlHighlight="@color/White"
+                    android:src="@drawable/title_right_meeting"
+                    android:onClick="onBack"
+                    android:padding="17dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@id/title_fill"
+                    android:gravity="center"
+                    android:text="公告通知"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.rentian.newoa.common.view.RefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlell">
+
+        <ListView
+            android:id="@+id/lv_ofe_notificatin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layoutAnimation="@anim/search_listview_layout" />
+    </com.rentian.newoa.common.view.RefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <com.rentian.newoa.common.view.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/loading_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="fill_horizontal"
+            app:WhorlView_CircleSpeed="180"
+            app:WhorlView_Parallax="medium"
+            app:WhorlView_StrokeWidth="4"
+            app:WhorlView_SweepAngle="240" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Loading"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>

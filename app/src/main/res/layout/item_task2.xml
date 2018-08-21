@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_task"
+    android:layout_height="50dp">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:buttonTint="@color/task_text1"
+        android:layout_marginStart="15dp" />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/task_text1"
+        android:layout_toEndOf="@id/checkbox"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:id="@+id/iv_jibie"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="51dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/jibie"
+        android:tint="@color/material_red"
+         />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_sender"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@drawable/img_avatar"
+        />
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/bg_task2"
+        android:layout_height="1dp" />
+</RelativeLayout>

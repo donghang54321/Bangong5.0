@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack">
+    <include layout="@layout/search_super_view"
+        android:id="@+id/send"/>
+    <com.rentian.newoa.common.view.RefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_below="@id/send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_all_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/search_listview_layout" />
+    </com.rentian.newoa.common.view.RefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.rentian.newoa.common.view.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/loading_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="fill_horizontal"
+            app:WhorlView_CircleSpeed="180"
+            app:WhorlView_Parallax="medium"
+            app:WhorlView_StrokeWidth="4"
+            app:WhorlView_SweepAngle="240" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Loading"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

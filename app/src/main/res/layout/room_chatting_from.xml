@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ChattingUIContent"
+    android:layout_below="@+id/chatting_time_tv">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.rentian.newoa.common.view.CircleImageView
+            android:id="@+id/chatting_avatar_iv"
+            style="@style/ChattingUIAvatarFrom"
+            android:focusable="false"
+            android:src="@drawable/default_avatar"
+            />
+        <TextView
+            android:id="@+id/tv_name_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <com.rentian.newoa.modules.meeting.view.CCPTextView
+            android:id="@+id/chatting_content_itv"
+            style="@style/ChattingUIText"
+            android:background="@drawable/ytx_chatfrom_bg"
+            android:autoLink="all"
+            android:linksClickable="false"
+            android:maxWidth="225.0dip"
+            android:minHeight="@dimen/ChattingContentMinHeight"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="15.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:gravity="center"
+    android:paddingBottom="8dip"
+    android:paddingTop="5dip">
+
+    <com.rentian.newoa.common.view.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_to_refresh_load_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        app:WhorlView_CircleSpeed="180"
+        app:WhorlView_Parallax="medium"
+        app:WhorlView_StrokeWidth="4"
+        app:WhorlView_SweepAngle="240" />
+
+</RelativeLayout>

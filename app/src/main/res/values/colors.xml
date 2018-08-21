@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#f2f2f2</color>
+    <color name="colorAccent">#FF000000</color>
+    <color name="colorDone">#0F9D58</color>
+    <color name="colorSchedule">#EF6C00</color>
+    <color name="colorBack">#F0F0F0</color>
+    <color name="main_title_bg">#fcfbfb</color>
+    <color name="main_title_text">#7f7f82</color>
+    <color name="main_time_text">#bfbebe</color>
+    <color name="colorAccentDown">#195C9B</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="content_background">#f2f2f2</color>
+
+        <!-- 公共的 -->
+        <color name="tab_main_text_1">#aaa</color>
+        <color name="tab_main_text_2">#74b5f7</color>
+        <color name="tab_top_text_1">#aaa</color>
+        <color name="tab_top_text_2">#436EEE</color>
+        <color name="tab_top2_text_1">#000</color>
+        <color name="tab_top2_text_2">#fff</color>
+
+        <!-- 头像7种颜色 -->
+        <color name="head_image_0">#303F9F</color>
+        <color name="head_image_1">#F57C00</color>
+        <color name="head_image_2">#C2185B</color>
+        <color name="head_image_3">#388E3C</color>
+        <color name="head_image_4">#7B1FA2</color>
+        <color name="head_image_5">#0097A7</color>
+        <color name="head_image_6">#455A64</color>
+
+
+        <color name="head_back_0">#3F51B5</color>
+        <color name="head_back_1">#FF9800</color>
+        <color name="head_back_2">#E91E63</color>
+        <color name="head_back_3">#4CAF50</color>
+        <color name="head_back_4">#9C27B0</color>
+        <color name="head_back_5">#00BCD4</color>
+        <color name="head_back_6">#607D8B</color>
+
+    <color name="material_red">#F44336</color>
+    <color name="material_green">#4CAF50</color>
+    <color name="material_blue">#5677fc</color>
+    <color name="normal_text_color">#ff353535</color>
+    <color name="list_devider_color">#fff2f2f2</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#ff9a9b9c</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="darkRed">#AA2222</color>
+    <color name="darkGrey">#848284</color>
+    <color name="bg_task">#fbfbfb</color>
+    <color name="bg_task2">#ededed</color>
+    <color name="bg_task3">#71706f</color>
+    <color name="bg_task4">#4e4d4e</color>
+    <color name="task_text1">#7f7f82</color>
+    <color name="task_text2">#cfcece</color>
+    <color name="task_text3">#4f4e4e</color>
+
+    <color name="rank1">#cfcec7</color>
+    <color name="rank2">#f4ca38</color>
+    <color name="rank3">#e69b3a</color>
+    <color name="rank4">#bc4545</color>
+
+    <color name="bt_0">#bababa</color>
+    <color name="bt_1">#4d4d4d</color>
+    </resources>

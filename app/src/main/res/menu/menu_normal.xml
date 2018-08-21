@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:iconTint="@color/head_back_1"
+        app:icon="@mipmap/ic_launcher"
+        app:menu_title="@string/jibie4"/>
+    <item
+        android:iconTint="@color/head_back_1"
+        app:icon="@drawable/jibie"
+        app:menu_title="@string/jibie3" />
+    <item
+        android:iconTint="@color/head_back_1"
+        app:icon="@drawable/jibie"
+        app:menu_title="@string/jibie2" />
+    <item
+        android:iconTint="@color/head_back_1"
+        app:icon="@drawable/jibie"
+        app:menu_title="@string/jibie1" />
+
+</menu>

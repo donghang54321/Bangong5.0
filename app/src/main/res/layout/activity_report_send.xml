@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack">
+
+    <LinearLayout
+        android:id="@+id/titlell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <LinearLayout
+                    android:id="@+id/title_left_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:onClick="onBack"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/title_iv_back"
+                        android:layout_width="8.5dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/arrow_goback_left" />
+
+                    <TextView
+                        android:id="@+id/title_tv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="返回"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="培训笔记"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/title_tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:onClick="onSend"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="提交"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.rentian.newoa.common.view.StretchScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlell">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_calender"
+                android:background="@color/colorBack"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/tab_top_text_1"
+                        android:text="课程名称" />
+
+                    <TextView
+                        android:id="@+id/work_of_today_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="35dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="13dp"
+                        android:gravity="center"
+                        android:textColor="@color/tab_top_text_1"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/work_of_today_num"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/work_of_today_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/work_of_today_num"
+                        android:background="@android:color/holo_red_light" />
+
+                    <EditText
+                        android:id="@+id/et_work_of_today"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/work_of_today_num"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:textColor="@color/Black"
+                        android:minHeight="56dp"
+                        android:text="        " />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/tab_top_text_1"
+                        android:text="笔记内容" />
+
+                    <TextView
+                        android:id="@+id/problem_feedback_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="35dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="13dp"
+                        android:gravity="center"
+                        android:textColor="@color/tab_top_text_1"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/problem_feedback_num"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/problem_feedback_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/problem_feedback_num"
+                        android:background="@android:color/holo_red_light" />
+
+                    <EditText
+                        android:id="@+id/et_problem_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/problem_feedback_num"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@null"
+                        android:textColor="@color/Black"
+                        android:gravity="top"
+                        android:minHeight="200dp"
+                        android:text="        " />
+                </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.rentian.newoa.common.view.StretchScrollView>
+
+
+</RelativeLayout>

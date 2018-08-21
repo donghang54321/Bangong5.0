@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_task3" />
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:onClick="onTabClick1"
+        app:layout_marginStartPercent="5%">
+
+
+        <ImageView
+            android:id="@+id/main_tab_iv1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dianzan" />
+
+        <TextView
+            android:id="@+id/main_tab_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/main_tab_iv1"
+            android:textColor="@color/task_text3"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:onClick="onTabClick2"
+        app:layout_marginStartPercent="32%">
+
+
+        <ImageView
+            android:id="@+id/main_tab_iv2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pinglun" />
+
+        <TextView
+            android:id="@+id/main_tab_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/main_tab_iv2"
+            android:textColor="@color/task_text3"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:onClick="onTabClick3"
+        app:layout_marginStartPercent="59%">
+
+
+        <ImageView
+            android:id="@+id/main_tab_iv3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fujian" />
+
+        <TextView
+            android:id="@+id/main_tab_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/main_tab_iv3"
+            android:textColor="@color/task_text3"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:onClick="onTabClick4"
+        app:layout_marginStartPercent="86%">
+
+        <ImageView
+            android:id="@+id/main_tab_iv4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dongtai" />
+
+        <TextView
+            android:id="@+id/main_tab_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/main_tab_iv4"
+            android:textColor="@color/task_text3"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>
+
+

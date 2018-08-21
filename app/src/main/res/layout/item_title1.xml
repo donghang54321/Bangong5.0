@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/main_title_bg">
+    <com.rentian.newoa.common.view.SwipeMenuLayout2 xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        app:ios="true"
+        app:leftSwipe="true"
+        app:swipeEnable="true">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability = "blocksDescendants"
+            android:background="?android:attr/selectableItemBackground">
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_title_text"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+        <!-- 以下都是侧滑菜单的内容依序排列 -->
+        <ImageButton
+            android:id="@+id/btnTop"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#d9dee4"
+            android:text="置顶"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+
+
+    </com.rentian.newoa.common.view.SwipeMenuLayout2>
+
+
+</RelativeLayout>

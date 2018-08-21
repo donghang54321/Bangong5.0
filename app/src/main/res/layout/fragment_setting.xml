@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/White">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_touxiang"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_touxiang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/task_text3"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_gird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/item1"
+            layout="@layout/item_setting" />
+
+        <include
+            android:id="@+id/item2"
+            layout="@layout/item_setting2" />
+
+        <include
+            android:id="@+id/item3"
+            layout="@layout/item_setting" />
+
+        <include
+            android:id="@+id/item4"
+            layout="@layout/item_setting2" />
+
+        <include
+            android:id="@+id/item5"
+            layout="@layout/item_setting" />
+
+        <include
+            android:id="@+id/item6"
+            layout="@layout/item_setting2" />
+
+        <TextView
+            android:id="@+id/tv_tuichu"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="45dp"
+            android:background="@color/White"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/darkRed"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

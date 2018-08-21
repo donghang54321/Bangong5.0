@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">新办公</string>
+    <!-- login -->
+
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_login">登&#160;录</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="work">工作台</string>
+    <string name="talk">沟通</string>
+    <string name="Legwork">外勤</string>
+    <string name="addressList">通讯录</string>
+    <string name="Loading">加载中</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_edit">菜单选项</string>
+    <string name="search_edit">可搜索姓名、岗位和部门</string>
+    <string name="action_list">列表</string>
+    <string name="action_share">分享</string>
+    <string name="action_copy">复制</string>
+    <string name="input_email">输入邮箱</string>
+    <string name="input_team">输入团队名称</string>
+    <string name="tv_forgetpassword">输入您的邮箱/手机号，我们将帮助您重置密码</string>
+    <string name="action_addteam">请输入您要加入的团队名称，选择匹配出的结果申请加入</string>
+    <string name="action_delete">删除</string>
+    <string name="action_suoding">锁定</string>
+    <string name="action_fenlei">分类</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_contact_details">ContactDetailsActivity</string>
+
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="title_activity_test">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_task_detail">TaskDetailActivity</string>
+    <string name="erweima">扫一扫</string>
+    <string name="newtask">新任务</string>
+    <string name="sendtask">我发出的</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="jibie4">高优先级</string>
+    <string name="jibie3">中优先级</string>
+    <string name="jibie2">低优先级</string>
+    <string name="jibie1">无优先级</string>
+
+
+    <!-- 公共字符串 -->
+    <string name="all_cancel">取消</string>
+    <string name="all_sure">确定</string>
+    <!-- Activity标题名称-->
+    <string name="base_title">BaseActivity</string>
+    <string name="login_title">LoginActivity</string>
+    <string name="tracing_title">轨迹追踪</string>
+    <string name="tracing_options_title">追踪设置</string>
+    <string name="track_query_title">轨迹查询</string>
+    <string name="track_query_options_title">查询设置</string>
+
+    <!-- Activity说明 -->
+    <string name="tracing_desc">室内、外高精度连续追踪</string>
+    <string name="track_query_desc">查询被追踪者的历史轨迹</string>
+
+    <!-- TracingOptionActivity 主选项名称 -->
+    <string name="tracing_option_interval">采集、打包频率(单位:秒):</string>
+    <string name="tracing_option_location_mode">定位模式:</string>
+
+    <!-- 定位模式子选项名称 -->
+    <string name="high_accuracy">高精度定位模式，GPS与网络综合定位</string>
+    <string name="battery_saving">低功耗定位模式，仅使用网络定位</string>
+    <string name="device_sensors">仅使用设备(GPS)定位</string>
+
+    <!-- 采集打包子选项 -->
+    <string name="gather_interval">采集频率:</string>
+    <string name="pack_interval">打包频率:</string>
+
+    <!-- 采集打包默认值 -->
+    <string name="gather_interval_hint">5</string>
+    <string name="pack_interval_hint">15</string>
+
+    <!-- TrackQueryOptionsActivity主选项 -->
+    <string name="track_query_option_time">起止时间:</string>
+    <string name="track_query_option_process">纠偏与数据分析:</string>
+    <string name="track_query_option_radius_threshold">精度过滤(单位:米):</string>
+
+    <!-- 起止时间子选项 -->
+    <string name="start_time">开始：</string>
+    <string name="end_time">结束：</string>
+
+    <!-- 精度过滤子选项-->
+    <string name="radius_value">过滤值：</string>
+    <string name="radius_hint">0</string>
+
+    <!-- 纠偏与数据分析子选项 -->
+    <string name="processed">纠偏</string>
+    <string name="denoise">去噪</string>
+    <string name="vacuate">抽稀</string>
+    <string name="mapmatch">绑路</string>
+
+    <!-- 追踪控制子选项 -->
+    <string name="start_trace">开启服务</string>
+    <string name="stop_trace">停止服务</string>
+    <string name="start_gather">开启采集</string>
+    <string name="stop_gather">停止采集</string>
+
+    <string name="no_track_data">未查询到轨迹</string>
+
+    <string name="loc_failed">定位失败</string>
+    <string name="font_type">微软雅黑</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_account">账号信息</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

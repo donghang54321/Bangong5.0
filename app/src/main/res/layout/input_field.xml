@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_et_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/login_button_selector"
+        android:onClick="sendMessage"
+        android:text="发送"
+        android:textColor="@color/White"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/et_voice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/bt_send"
+        android:background="@drawable/et_input_field"
+        android:focusable="true" />
+</RelativeLayout>

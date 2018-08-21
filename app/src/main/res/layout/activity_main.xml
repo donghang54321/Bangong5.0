@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+    <LinearLayout
+        android:id="@+id/titlell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+                <ImageView
+                    android:id="@+id/title_left_iv"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:onClick="onTitleLeftClick"
+                    android:src="@drawable/default_avatar"
+                    android:scaleType="fitXY"
+                     />
+                <ImageView
+                    android:id="@+id/title_right_iv"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:colorControlHighlight="@color/White"
+                    android:src="@drawable/title_right_meeting"
+                    android:onClick="onBack"
+                    android:padding="17dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="国科创新研究院"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/tv_examina"
+                    android:layout_width="60dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:text="查询"
+                    android:visibility="gone"
+                    android:onClick="onExamina"
+                    android:textColor="@android:color/white"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.gxz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_below="@id/titlell"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/accent_material_light"
+        app:pstsIndicatorHeight="5dp"
+        app:pstsShouldExpand="false"
+        app:pstsTextSelectedColor="@color/accent_material_light"
+        app:pstsUnderlineColor="@color/White" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="com.rentian.newoa.modules.TestActivity">
+
+
+   <!-- <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />-->
+    <!--<ImageView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3f000000"
+        android:scaleType="centerCrop"/>-->
+
+    <com.rentian.newoa.common.view.lunboRecyclerView.SpeedRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+</RelativeLayout>

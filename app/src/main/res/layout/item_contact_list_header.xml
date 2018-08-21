@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/search_super_view" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/contact_catalog"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:text="组织结构"-->
+    <!--android:textColor="@android:color/darker_gray" />-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/White"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<com.rentian.rentianoa.common.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/report_avatar_iv"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_margin="15dp"-->
+    <!--android:src="@drawable/group"-->
+    <!--app:border_color="@android:color/transparent"-->
+    <!--app:border_width="0dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/contact_name"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="部门" />-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

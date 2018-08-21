@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tv_gc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="人天通信集团"
+        android:maxEms="16"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="16dp"
+        android:textColor="@color/task_text3" />
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_check_black_24dp"/>
+</RelativeLayout>

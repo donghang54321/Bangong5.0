@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_daka"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rentian.newoa.modules.kaoqin.view.DakaActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/toolbarMenuStyle"
+            app:theme="@style/toolBarbalck"
+            app:title="打卡"
+            app:titleTextColor="@color/task_text3" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/center2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center2"
+        android:layout_marginBottom="56dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center"
+        android:layout_marginBottom="56dp" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/center"
+        android:layout_below="@id/appBarLayout"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@id/line1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_tuoyuan"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="08:25"
+            android:textColor="@color/task_text3"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_task"
+        android:elevation="4dp"
+        android:layout_alignTop="@+id/center"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <TextView
+                android:id="@+id/tv_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="当前时间"
+                android:textColor="@color/task_text2"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_time2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/task_text3"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="16dp"
+                android:layout_below="@id/tv_time2"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@id/tv_add"
+                android:scaleType="fitXY"
+                android:src="@drawable/dingwei" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="12dp"
+                android:layout_below="@id/tv_time2"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="22dp"
+                android:layout_toEndOf="@id/tv_add"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_down" />
+
+            <TextView
+                android:id="@+id/tv_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/task_text2"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_marginTop="10dp"
+            android:background="@color/White">
+
+            <EditText
+                android:id="@+id/et_mark"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="添加备注" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_iv"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/et_mark"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"/>
+
+           <!-- <ImageView
+                android:id="@+id/iv_xiangji"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/et_mark"
+                android:src="@drawable/xiangji"
+                android:scaleType="fitXY"
+                android:layout_width="56dp"
+                android:layout_height="56dp" />-->
+
+        </RelativeLayout>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"
+            stv:sCenterTextColor="@color/white"
+            stv:sCenterTextSize="20dp"
+            stv:sCenterTextString="确认签到"
+            stv:sShapeCornersRadius="23dp"
+            stv:sShapeSelectorNormalColor="@color/bg_task4"
+            stv:sShapeSelectorPressedColor="@color/gray"
+            stv:sUseShape="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

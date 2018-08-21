@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/meeting_contact_item_layout"
+        style="@style/CCPListItem">
+
+        <RelativeLayout
+            android:id="@+id/meeting_contact_item_avatar"
+            android:layout_width="@dimen/NormalAvatarWrapSize"
+            android:layout_height="@dimen/NormalAvatarWrapSize"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/SmallPadding"
+            android:layout_marginRight="@dimen/SmallPadding">
+
+            <ImageView
+                android:id="@+id/content"
+                android:layout_width="@dimen/NormalAvatarSize"
+                android:layout_height="@dimen/NormalAvatarSize"
+                android:src="@drawable/default_avatar"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/meeting_contact_item_avatar"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/meeting_contact_item_nick_tv"
+                style="@style/CCPFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:text="{nick}" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

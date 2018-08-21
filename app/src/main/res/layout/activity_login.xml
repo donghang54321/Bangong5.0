@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/White">
+
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/titile1"/>
+
+    <com.rentian.newoa.common.view.banner.BannerLayout
+        android:id="@+id/recycler"
+        android:layout_below="@id/ivTitle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="39dp"
+        android:layout_height="320dp"
+        app:autoPlaying="true"
+        app:showIndicator="false"
+        app:centerScale="1.3"
+        app:itemSpace="20"
+        app:moveSpeed="1.8"/>
+    <TextView
+        android:id="@+id/tv_zhuce"
+        android:onClick="onRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/task_text3"
+        android:text="注册企业核"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/bt_weixin"
+        android:layout_above="@id/tv_zhuce"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_height="50dp"
+        android:elevation="2dp"
+        stv:sCenterTextSize="20dp"
+        stv:sCenterTextColor="@color/task_text3"
+        stv:sCenterTextString="使用微信登录"
+        stv:sCenterTvDrawableHeight="20dp"
+        stv:sCenterTvDrawableLeft="@drawable/weixin"
+        stv:sCenterTvDrawableWidth="20dp"
+        stv:sTextViewDrawablePadding="3dp"
+        stv:sShapeCornersRadius="23dp"
+        stv:sShapeStrokeColor="@color/bg_task4"
+        stv:sShapeStrokeWidth="1dp"
+        stv:sShapeSelectorPressedColor="@color/gray"
+        stv:sUseShape="true"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/bt_login"
+        android:elevation="2dp"
+        android:onClick="onLogin"
+        android:layout_above="@id/bt_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        stv:sCenterTextColor="@color/white"
+        stv:sCenterTextString="邮箱/手机号登录"
+        stv:sCenterTextSize="20dp"
+        stv:sShapeCornersRadius="23dp"
+        stv:sShapeSelectorNormalColor="@color/bg_task4"
+        stv:sShapeSelectorPressedColor="@color/gray"
+        stv:sUseShape="true" />
+
+</RelativeLayout>

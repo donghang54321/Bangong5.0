@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/time1" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/iv"
+        android:text="2018-5-8  9:00"
+        android:textColor="@color/task_text3"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/iv"
+        android:maxLines="1"
+        android:text="担惊受恐荆防颗粒收到货后获得升级和"
+        android:textColor="@color/task_text3"
+        android:textSize="14dp" />
+
+
+    <com.fang.dashview.DashView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv"
+        app:dashOrientation="1"
+        app:dashWidth="2dp"
+        app:lineColor="@color/task_text2"
+        app:lineHeight="1dp"
+        android:layout_marginStart="42dp"
+        app:lineWidth="4dp" />
+</RelativeLayout>

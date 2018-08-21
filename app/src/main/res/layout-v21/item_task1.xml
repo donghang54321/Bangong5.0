@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/White"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_toStartOf="@+id/cardview"
+        >
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/bt_ic_done_white_24" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="左滑删除"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="1dp"
+        app:contentPadding="1dp"
+        app:cardElevation="4dp"
+        android:descendantFocusability = "blocksDescendants"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.rentian.newoa.common.view.SwipeMenuLayout2 xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/swipeMenu"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:paddingBottom="1dp"
+                app:ios="true"
+                app:leftSwipe="true"
+                app:swipeEnable="true">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:id="@+id/view_color"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="3dp"
+                        android:background="@color/colorSchedule"
+                        android:layout_height="match_parent"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/touxiang"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/default_avatar"/>
+                    <RelativeLayout
+                        android:layout_toStartOf="@id/touxiang"
+                        android:id="@+id/rl_title"
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="50dp"
+                        android:layout_height="40dp">
+                        <CheckBox
+                            android:id="@+id/checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            />
+                        <!-- <RadioButton
+                             android:id="@+id/radio"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="15dp"
+                             android:layout_centerVertical="true"
+                             android:visibility="gone"/>-->
+                        <TextView
+                            android:id="@+id/item"
+                            android:layout_marginStart="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorAccent"
+                            android:layout_centerVertical="true"
+                            android:textSize="16dp"
+                            android:singleLine="true"
+                            android:text="项目中我是任意复杂的原ContentItem布局" />
+                    </RelativeLayout>
+                    <LinearLayout
+
+                        android:layout_toStartOf="@id/touxiang"
+                        android:layout_below="@id/rl_title"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/ll_tag"
+                            android:layout_marginStart="53dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/biaoqian"/>
+                            <TextView
+                                android:id="@+id/tv_tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/main_time_text"
+                                android:textSize="11dp"
+                                android:layout_marginLeft="2dp"
+                                />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/endTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/main_time_text"
+                            android:textSize="11dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="20dp"
+                            />
+                        <LinearLayout
+                            android:id="@+id/ll_like"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/dianzan3"/>
+                            <TextView
+                                android:id="@+id/tv_like"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/main_time_text"
+                                android:textSize="11dp"
+                                android:layout_marginLeft="2dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ll_pinglun"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/pinglun3"/>
+                            <TextView
+                                android:id="@+id/tv_pinglun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/main_time_text"
+                                android:textSize="11dp"
+                                android:text="10"
+                                android:layout_marginLeft="2dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ll_file"
+                            android:visibility="gone"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/fujian3"/>
+                            <TextView
+                                android:id="@+id/tv_file"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/main_time_text"
+                                android:textSize="11dp"
+                                android:text="10"
+                                android:layout_marginLeft="2dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_dongtai"
+                            android:visibility="gone"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/guanzhu3"/>
+                            <TextView
+                                android:id="@+id/tv_dongtai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/main_time_text"
+                                android:textSize="11dp"
+                                android:text="10"
+                                android:layout_marginStart="2dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <!-- 以下都是侧滑菜单的内容依序排列 -->
+                <ImageButton
+                    android:id="@+id/btn4"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/jibie4"
+                    android:background="@color/rank4"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn3"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/rank3"
+                    android:clickable="true"
+                    android:src="@drawable/jibie3"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn2"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/rank2"
+                    android:src="@drawable/jibie2"
+                    android:textColor="@android:color/white" />
+                <ImageButton
+                    android:id="@+id/btn1"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/rank1"
+                    android:src="@drawable/jibie1"
+                    android:textColor="@color/white" />
+
+            </com.rentian.newoa.common.view.SwipeMenuLayout2>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

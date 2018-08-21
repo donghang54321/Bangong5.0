@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tv_creatteam"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="41dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="16"
+        android:maxLines="1"
+        android:text="创建新团队"
+        android:textColor="@color/task_text3"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/tuandui" />
+</RelativeLayout>

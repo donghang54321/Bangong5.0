@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ChattingUIContent"
+    android:layout_below="@+id/chatting_time_tv">
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+
+            <com.rentian.newoa.modules.meeting.view.CCPTextView
+                android:id="@+id/chatting_content_itv"
+                style="@style/ChattingUIText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:background="@drawable/ytx_chatto_bg"
+                android:autoLink="all"
+                android:linksClickable="false"
+                android:maxWidth="215.0dip"
+                android:minHeight="@dimen/ChattingContentMinHeight" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.rentian.newoa.common.view.CircleImageView
+            android:id="@+id/chatting_avatar_iv"
+            style="@style/ChattingUIAvatarTo"
+            android:focusable="false"
+            android:background="@drawable/default_avatar" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

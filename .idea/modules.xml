@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bangong5.0.iml" filepath="$PROJECT_DIR$/Bangong5.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SweetSheet/SweetSheet.iml" filepath="$PROJECT_DIR$/SweetSheet/SweetSheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/actionbar/actionbar.iml" filepath="$PROJECT_DIR$/actionbar/actionbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendarview/calendarview.iml" filepath="$PROJECT_DIR$/calendarview/calendarview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chatview/chatview.iml" filepath="$PROJECT_DIR$/chatview/chatview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filepicker/filepicker.iml" filepath="$PROJECT_DIR$/filepicker/filepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fmenu/fmenu.iml" filepath="$PROJECT_DIR$/fmenu/fmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/superTextview/superTextview.iml" filepath="$PROJECT_DIR$/superTextview/superTextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zpopupwindowlib/zpopupwindowlib.iml" filepath="$PROJECT_DIR$/zpopupwindowlib/zpopupwindowlib.iml" />
+    </modules>
+  </component>
+</project>
